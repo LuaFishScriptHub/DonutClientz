@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "basefinder",
+  "version": "${version}",
+  "name": "BaseFinder Pro",
+  "description": "Base finder ESP, loot value HUD, freecam and auction sniper.",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.basefinder.BaseFinderMod"] },
+  "mixins": [ { "config": "basefinder.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
